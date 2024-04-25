@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:background="@drawable/redbg"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="250dp"
+        android:layout_height="107dp"
+        android:layout_marginHorizontal="150dp"
+        android:layout_marginVertical="30dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/tup_logo" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:layout_marginTop="130dp"
+        android:orientation="vertical"
+        android:padding="30dp">
+
+
+        <EditText
+            android:id="@+id/fname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:backgroundTint="#FFFFFF"
+            android:fontFamily="sans-serif"
+            android:hint="First Name"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="18dp" />
+
+        <EditText
+            android:id="@+id/lname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:backgroundTint="#FFFFFF"
+            android:fontFamily="sans-serif"
+            android:hint="Last Name"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Year:"
+            android:textColor="@color/white" />
+
+        <RadioGroup
+            android:id="@+id/radio_group_id"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/firstyear"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="1st year"
+                android:textColor="@color/white" />
+
+            <RadioButton
+                android:id="@+id/secondyear"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="2nd year"
+                android:textColor="@color/white" />
+
+            <RadioButton
+                android:id="@+id/thirdyear"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="3rd year"
+                android:textColor="@color/white" />
+
+            <RadioButton
+                android:id="@+id/fourthyear"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:text="4th year"
+                android:textColor="@color/white" />
+
+        </RadioGroup>
+
+        <EditText
+            android:id="@+id/course"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:backgroundTint="#FFFFFF"
+            android:fontFamily="sans-serif"
+            android:hint="Course"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="18dp" />
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:backgroundTint="#FFFFFF"
+            android:fontFamily="sans-serif"
+            android:hint="GSFE Email"
+            android:inputType="textEmailAddress"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="18dp" />
+
+        <EditText
+            android:id="@+id/phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#FFFFFF"
+            android:fontFamily="sans-serif"
+            android:hint="Phone Number"
+            android:inputType="number"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="18dp" />
+
+        <EditText
+            android:id="@+id/address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#FFFFFF"
+            android:fontFamily="sans-serif"
+            android:hint="Full Address"
+            android:inputType="text"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="18dp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/text"
+            android:layout_marginHorizontal="200dp"
+            android:layout_marginStart="104dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="104dp"
+            android:layout_marginBottom="158dp"
+            android:backgroundTint="@color/red"
+            android:text="Submit"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/panglan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="14dp"
+        android:text="Duenas, Fajardo, Panila, Villanueva"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="14dp"
+        android:textStyle="italic" />
+
+
+</RelativeLayout>
